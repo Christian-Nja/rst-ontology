@@ -1,0 +1,371 @@
+@prefix : <http://www.semanticweb.org/linux/ontologies/2020/0/rst#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/linux/ontologies/2020/0/rst> .
+
+<http://www.semanticweb.org/linux/ontologies/2020/0/rst> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#analogy
+:analogy rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :comparison .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#antithesis
+:antithesis rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :contrast .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#attribution
+:attribution rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#background
+:background rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#cause
+:cause rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#circumstance
+:circumstance rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :background .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#comment
+:comment rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :evaluation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#comparison
+:comparison rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#concession
+:concession rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :contrast .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#conclusion
+:conclusion rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :evaluation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#condition
+:condition rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#consequence
+:consequence rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :cause .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#contingency
+:contingency rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :condition .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#contrast
+:contrast rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#definition
+:definition rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :elaboration .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#disjunction
+:disjunction rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :joint .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#elaboration
+:elaboration rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#elaborationAdditional
+:elaborationAdditional rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :elaboration .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#elaborationGeneralSpecific
+:elaborationGeneralSpecific rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :elaboration .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#elaborationObjectAttribute
+:elaborationObjectAttribute rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :elaboration .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#elaborationPartWhole
+:elaborationPartWhole rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :elaboration .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#elaborationProcessStep
+:elaborationProcessStep rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :elaboration .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#elaborationSetMember
+:elaborationSetMember rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :elaboration .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#enablement
+:enablement rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#evaluation
+:evaluation rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#evidence
+:evidence rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :explanation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#example
+:example rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :elaboration .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#explanation
+:explanation rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#explanationArgumentative
+:explanationArgumentative rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :explanation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#hypothetical
+:hypothetical rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :condition .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#interpretation
+:interpretation rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :evaluation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#invertedSequence
+:invertedSequence rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :temporal .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#joint
+:joint rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#list
+:list rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf :joint .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#manner
+:manner rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :mannerMeans .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#mannerMeans
+:mannerMeans rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#means
+:means rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :mannerMeans .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#otherwise
+:otherwise rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :condition .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#preference
+:preference rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :comparison .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#problemSolution
+:problemSolution rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :topicComment .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#proportion
+:proportion rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :comparison .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#purpose
+:purpose rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :enablement .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#questionAnswer
+:questionAnswer rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :topicComment .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#reason
+:reason rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :explanation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#restatement
+:restatement rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :summary .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#result
+:result rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :cause .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#rhetoricalQuestion
+:rhetoricalQuestion rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :topicComment .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#rhetoricalRelation
+:rhetoricalRelation rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Nucleus ;
+                    rdfs:range [ rdf:type owl:Class ;
+                                 owl:unionOf ( :Nucleus
+                                               :Satellite
+                                             )
+                               ] .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#sameUnit
+:sameUnit rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :structure .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#sequence
+:sequence rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :temporal .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#span
+:span rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf :structure .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#statementResponse
+:statementResponse rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :topicComment .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#structure
+:structure rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#summary
+:summary rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#temporal
+:temporal rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#temporalAfter
+:temporalAfter rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :temporal .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#temporalBefore
+:temporalBefore rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :temporal .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#temporalSameTime
+:temporalSameTime rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :temporal .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#textualOrganization
+:textualOrganization rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :structure .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#topicChange
+:topicChange rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#topicComment
+:topicComment rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :rhetoricalRelation .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#topicDrift
+:topicDrift rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :topicChange .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#topicShift
+:topicShift rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :topicChange .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#endOffset
+:endOffset rdf:type owl:DatatypeProperty ;
+           rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#score
+:score rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#startOffset
+:startOffset rdf:type owl:DatatypeProperty ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#text
+:text rdf:type owl:DatatypeProperty ;
+      rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#Nucleus
+:Nucleus rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/linux/ontologies/2020/0/rst#Satellite
+:Satellite rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

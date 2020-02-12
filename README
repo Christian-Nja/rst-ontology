@@ -1,0 +1,34 @@
+RST-ontology
+============
+
+Un ontologia per la Rhetorical Structure Theory. 
+
+ENTITIES
+========
+
+Satellite
+Nucleus
+
+PROPERTIES
+==========
+
+### DataProperty
+
+score
+offset
+text
+
+### Binary RST Relations
+
+cause
+attribution
+justify
+joint
+elaboration
+concession
+contrast
+
+...
+
+# author: Christian Colonna
+
